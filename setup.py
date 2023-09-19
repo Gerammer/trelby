@@ -37,7 +37,7 @@ class build_scripts(_build_scripts):
                 if """sys.path.insert(0, "src")""" in line:
                     line = """sys.path.insert(0, "%s/src")""" % libDir
 
-                print line,
+                print (line),
 
 class bdist_rpm(_bdist_rpm):
     """bdist_rpm command
